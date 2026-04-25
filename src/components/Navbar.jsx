@@ -17,7 +17,7 @@ useEffect(() => {
       if (section) {
         const rect = section.getBoundingClientRect();
 
-        // 👇 Detect if section is near center of screen
+        //  Detect if section is near center of screen
         if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
           current = id;
         }
@@ -66,6 +66,13 @@ useEffect(() => {
             className={`hover:text-blue-500 ${active === "experience" ? "text-blue-500" : ""}`}
           >
             Experience
+          </a>
+
+          <a
+            href="#education"
+            className={`hover:text-blue-500 ${active === "education" ? "text-blue-500" : ""}`}
+          >
+            Education
           </a>
 
           <a

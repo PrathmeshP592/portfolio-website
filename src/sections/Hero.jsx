@@ -1,12 +1,14 @@
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import { BsChatDots } from "react-icons/bs";
+import { BsBriefcaseFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-white text-black dark:bg-black dark:text-white">
-      
+    <section
+      id="home"
+      className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-white text-black dark:bg-black dark:text-white"
+    >
       {/* Heading */}
       <h1 className="text-4xl md:text-6xl font-bold text-center leading-tight">
         Hi, I'm{" "}
@@ -26,24 +28,24 @@ function Hero() {
         </span>
       </h1>
 
-      {/* Description - fade only */}
+      {/* Description */}
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
         className="mt-6 text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl"
       >
-        Software Engineer, building scalable web applications and intelligent AI systems, with hands-on experience in React and LLM-powered solutions.
+        Software Engineer, building scalable web applications and intelligent AI
+        systems, with hands-on experience in React and LLM-powered solutions.
       </motion.p>
 
-      {/* Buttons + Social - from RIGHT */}
+      {/* Buttons */}
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
         className="mt-10 flex flex-wrap justify-center items-center gap-8 text-lg"
       >
-
         {/* Resume */}
         <a
           href="https://drive.google.com/file/d/1qxcrP75TSglsnaJDtbMZtP-gUPZ22SmM/view?usp=sharing"
@@ -55,13 +57,13 @@ function Hero() {
           Resume
         </a>
 
-        {/* Contact */}
+        {/* Hire Me */}
         <a
           href="#contact"
           className="flex items-center gap-2 hover:text-blue-500 transition"
         >
-          <BsChatDots />
-          Contact
+          <BsBriefcaseFill />
+          Hire Me
         </a>
 
         {/* GitHub */}
@@ -85,9 +87,7 @@ function Hero() {
           <FaLinkedin />
           LinkedIn
         </a>
-
       </motion.div>
-
     </section>
   );
 }

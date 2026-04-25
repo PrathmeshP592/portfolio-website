@@ -6,6 +6,7 @@ import Experience from "./sections/Experience";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import Education from "./sections/Education";
 
 function App() {
   const [dark, setDark] = useState(true);
@@ -24,6 +25,7 @@ function App() {
       <Hero />
       <Projects />
       <Experience />
+      <Education />
       <Skills />
       <Contact />
       <Footer />
